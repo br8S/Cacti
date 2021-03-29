@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    overflow-x: hidden;
 }
 
 body{
@@ -38,15 +42,105 @@ body{
     height: 2.2rem;
     top: 0;
     width: 100%;
-    background-color: rgb(214, 200, 179);
+    background-color: #ffe5ce;
 }
 
 .side-banner {
     position: absolute;
     z-index: 2;
-    height: 100%;
-    top: 0;
+    top: 2.2rem;
     right: 0;
     width: 20rem;
-    background-color: rgb(214, 200, 179);
+    background-color: #ffe5ce;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 0.8rem;
 }
+
+.btn {
+    position: relative;
+    height: 2.2rem;
+    background-color: #ec2e30;
+    color: #ffe5ce;
+    border: none;
+    margin: 0 0 0.4rem 0;
+    font-size: 1rem;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #ae1f21;
+    cursor: pointer;
+}
+
+.find-buy-btns{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.find-btn {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 0.4rem 0 0;
+}
+
+.buy-btn {
+    flex-grow: 1;
+    flex-basis: 0;
+    margin: 0 0 0 0.4rem;
+}
+
+.enter-info {
+    margin: 1rem 0 0 0;
+}
+
+input, select {
+    height: 2.2rem;
+    width: 100%; 
+    font-size: 1rem;
+    color: #ffe5ce;
+    background-color: #366174;
+    font-weight: 500;
+    border: none;
+    border-radius: 2px;
+    margin: 0 0 0.4rem 0;
+    padding: 0.5rem;
+}
+
+input:focus, select:focus {
+    background-color: #224e61;
+    border: 1px solid black;
+}
+
+::placeholder {
+    color: #ffe5ce;
+}
+
+#month{
+    flex: 2 1 0;
+    margin: 0 0.1rem 0.4rem 0;
+}
+
+.birthday {
+    display: flex;
+    flex-direction: row;
+}
+
+.birthday-item {
+    flex: 1 1 0;
+    margin: 0 0.1rem 0.4rem 0.1rem;
+}
+
+.logo-info {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.text-cans {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+/* in gsap you must be moving the element up on scroll and no overflow allowed? for side menu. */
