@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+.jsscene{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-image: url('images/drink-cacti-bg-5.eeda9115.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
