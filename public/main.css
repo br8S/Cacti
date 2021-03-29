@@ -11,6 +11,8 @@ body{
 }
 
 .jsscene{
+    position: relative;
+    z-index: 0;
     height: 100vh;
     width: 100%;
     background-color: black;
@@ -18,4 +20,33 @@ body{
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
+}
+
+.bubble-ad{
+    position: absolute;
+    z-index: 2;
+    height: 18rem;
+    width: auto;
+    top: 0;
+    transform: rotate(-10deg);
+    margin: 2rem 1rem;
+}
+
+.banner {
+    position: absolute;
+    z-index: 2;
+    height: 2.2rem;
+    top: 0;
+    width: 100%;
+    background-color: rgb(214, 200, 179);
+}
+
+.side-banner {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 20rem;
+    background-color: rgb(214, 200, 179);
 }
