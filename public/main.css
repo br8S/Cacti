@@ -226,23 +226,15 @@ input[type=checkbox]:checked {
 @media only screen and (max-width: 800px){
     .bubble-ad{
         position: absolute;
-        z-index: 2;
         height: 12rem;
-        top: 0;
         transform: rotate(-10deg);
-        margin: 2rem 1rem;
+        margin: 2rem 0.5rem;
     }
 
     .jsscene{
         position: relative;
-        z-index: 0;
         height: 90vh;
         width: 100%;
-        background-color: black;
-        background-image: url('images/drink-cacti-bg-5.eeda9115.jpg');
-        background-size: cover;
-        background-position: center bottom;
-        background-repeat: no-repeat;
         overflow: hidden;
     }
 
@@ -252,24 +244,11 @@ input[type=checkbox]:checked {
         top: 0;
         right: 0;
         width: 100%;
-        background-color: #ffe5ce;
-        display: flex;
-        flex-direction: column;
         padding: 0.2rem 0.5rem;
-        align-items: center;
     }
 
     .btn {
-        position: relative;
-        height: 2.2rem;
-        background-color: #ec2e30;
-        color: #ffe5ce;
-        border: none;
         margin: 0 0 0.2rem 0;
-        font-size: 1rem;
-        border-radius: 2px;
-        font-weight: 500;
-        width: 100%;
     }
 
     .find-btn {
