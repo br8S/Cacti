@@ -3,8 +3,10 @@ import {GLTFLoader} from '/jsm/loaders/GLTFLoader.js';
 import {OrbitControls} from '/jsm/controls/OrbitControls.js';
 
 var scene, camera, renderer, alight, hlight, light, light2, light3, light4, cacti;
+var isMouseDown = false;
 
 function init(){
+
     scene = new THREE.Scene();
     
     camera = new THREE.PerspectiveCamera(10, window.innerWidth/window.innerHeight, 500 , 5000);
@@ -70,22 +72,37 @@ function init(){
     let controls = new OrbitControls(camera, renderer.domElement);
     controls.addEventListener('change', renderer);
     controls.enableZoom = false;
+    controls.enablePan = false;
 
     animate();
 }
 
+function onMouseDown(){
+    isMouseDown = true;
+    console.log("mouseddown");
+}
+
+function onMouseUp(){
+    isMouseDown = false;
+}
+
 function animate(){
     requestAnimationFrame(animate);
-    //composer.render();
+
+    if(!isMouseDown){
+        cacti.rotation.z -= 0.003;
+    }
+
+    light.position.set( 
+        camera.position.x + 10,
+        camera.position.y + 10,
+        camera.position.z + 10,
+    );
+
     renderer.render(scene, camera);
     renderer.shadowMap.enabled = true;
-    light.position.set( 
-         camera.position.x + 10,
-         camera.position.y + 10,
-         camera.position.z + 10,
-     );
 
-     cacti.rotation.z -= 0.005;
+
 }
 
 init();
