@@ -12,8 +12,9 @@
 <body>
     <div class="conatiner">
     <script class="threejs" type="module" src="scene.js"></script>
-    <div class="jsscene"></div>
-    <img class="bubble-ad" src="images/bubble.png"></img>
+    <div class="jsscene">
+        <img class="bubble-ad" src="images/bubble.png"></img>
+    </div>
     <div class="banner"></div>
     <div class="side-banner">
         <button class="btn"> BUY CACTI </button>
@@ -46,7 +47,9 @@
             </div>
             <input type="text" id="zipcode" name="zipcode" placeholder='ZIP CODE'><br>
             <input type="text" id="email" name="email" placeholder='EMAIL'><br>
-            <input type="checkbox">
+            
+            <input type="checkbox" class="checkbox" id="check"><span class="checkbox-text">  Yes, I consent to CACTI and its affiliates using my personal information to provide me with product and marketing information by email and other electronic means, and I have read and agree to the CACTI Terms of Use and Privacy Policy.</span>
+            
             <input type="submit" id="signup" name="signup" value="SIGN UP">
         </form>
         <img class="logo-info" src="images/LOGO-INFO.dd3e1c1b.png">

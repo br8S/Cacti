@@ -5,6 +5,8 @@ import {OrbitControls} from '/jsm/controls/OrbitControls.js';
 var scene, camera, renderer, alight, hlight, light, light2, light3, light4, cacti;
 var isMouseDown = false;
 
+
+
 function init(){
 
     scene = new THREE.Scene();
@@ -62,7 +64,7 @@ function init(){
     let loader = new GLTFLoader();
     loader.load('lime.glb', function(gltf){
         cacti = gltf.scene.children[0];
-        cacti.scale.set(8, 8, 8);
+        cacti.scale.set(8.5, 8.5, 8.5);
         cacti.rotation.z = 55;
         cacti.rotation.y = -25;
         scene.add(gltf.scene);
