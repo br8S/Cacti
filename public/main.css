@@ -15,7 +15,7 @@ body{
 }
 
 .jsscene{
-    position: relative;
+    position: fixed;
     z-index: 0;
     height: 100vh;
     width: 100%;
@@ -27,7 +27,7 @@ body{
 }
 
 .bubble-ad{
-    position: absolute;
+    position: fixed;
     z-index: 2;
     height: 18rem;
     width: auto;
@@ -37,7 +37,7 @@ body{
 }
 
 .banner {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     height: 2.2rem;
     top: 0;
@@ -48,13 +48,14 @@ body{
 .side-banner {
     position: absolute;
     z-index: 2;
-    top: 2.2rem;
+    top: 0;
     right: 0;
     width: 20rem;
     background-color: #ffe5ce;
     display: flex;
     flex-direction: column;
     padding: 0rem 0.8rem;
+    align-items: center;
 }
 
 .btn {
@@ -63,10 +64,11 @@ body{
     background-color: #ec2e30;
     color: #ffe5ce;
     border: none;
-    margin: 0 0 0.4rem 0;
+    margin: 2.2rem 0 0.4rem 0;
     font-size: 1rem;
     border-radius: 2px;
     font-weight: 500;
+    width: 100%;
 }
 
 .btn:hover {
@@ -94,6 +96,7 @@ body{
 
 .enter-info {
     margin: 1rem 0 0 0;
+    width: 100%;
 }
 
 input, select {
@@ -143,4 +146,34 @@ input:focus, select:focus {
     width: 100%;
 }
 
+.social-img {
+    height: 1.4rem;
+    width: auto;
+}
+
+.socials {
+    margin: 3rem 0 2rem 0;
+}
+
+.footer-nav {
+    font-size: 0.66rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.footer-link {
+    margin: 0 0.4rem 0 0;
+    color: #366174;
+}
+
+.footer-link a {
+    color: #366174;
+}
+
+.fineprint {
+    color: #366174;
+    font-size: 0.66rem;
+    line-height: 1rem;
+    margin: 1rem 0 3rem 0;
+}
 /* in gsap you must be moving the element up on scroll and no overflow allowed? for side menu. */
